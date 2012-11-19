@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>MembershipService.WebForms</id>
+    <version>0.1</version>
+    <title>MembershipService.WebForms</title>
+    <authors>Steven Sanderson</authors>
+    <owners>Steven Sanderson</owners>
+    <licenseUrl>http://www.opensource.org/licenses/mit-license.php</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>WebForms generic handler for exposing Membership, Roles, and Profiles data in a REST-style</description>
+    <summary>WebForms generic handler for exposing Membership, Roles, and Profiles data in a REST-style</summary>
+  </metadata>
+</package>
