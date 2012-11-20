@@ -1,0 +1,108 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Windows.Input;
+using Clowa.Client.Common;
+using Clowa.Client.Events;
+using Clowa.Models;
+
+namespace Clowa.Client.ViewModel
+{
+    public class ContactViewModel : ViewModelBase
+    {
+        public event EventHandler<OpenChatEventArgs> OpenChatEvent;
+
+        private readonly ContactViewModel _parent;
+
+        private User _user;
+        public User User
+        {
+            get
+            {
+                return _user;
+            }
+            set
+            {
+                _user = value;
+                OnPropertyChanged("User");
+            }
+        }
+
+        private bool _isOnline;
+        public bool IsOnline
+        {
+            get { return _isOnline; }
+            set
+            {
+                if (_isOnline != value)
+                {
+                    _isOnline = value;
+                    Status = _isOnline ? "Online" : "Offline";
+                    OnPropertyChanged("Online");
+                }
+            }
+        }
+
+        private string _status;
+        public string Status
+        {
+            get { return _status; }
+            set
+            {
+                if (_status != value)
+                {
+                    _status = value;
+                    OnPropertyChanged("Status");
+                }
+            }
+        }
+
+        #region ctors
+        public ContactViewModel()
+        {
+        }
+
+        public ContactViewModel(User user)
+        {
+            User = user;
+            IsOnline = user.Online;
+            Status = user.Online ? "Online" : "Offline";
+        }
+
+        public ContactViewModel(User user, ContactViewModel parent)
+        {
+            User = user;
+            IsOnline = user.Online;
+            Status = user.Online ? "Online" : "Offline";
+            _parent = parent;
+        }
+        #endregion
+
+        private ICommand _chatCommand;
+        public ICommand ChatCommand
+        {
+            get
+            {
+                if (_chatCommand == null)
+                {
+                    _chatCommand = new CommandBase(c => OpenChat(), c => CanOpenChat());
+                }
+                return _chatCommand;
+            }
+        }
+
+        private void OpenChat()
+        {
+            if (_parent.OpenChatEvent != null)
+            {
+                _parent.OpenChatEvent(this, new OpenChatEventArgs(this.User));
+            }
+        }
+
+        private bool CanOpenChat()
+        {
+            return IsOnline;
+        }
+    }
+}

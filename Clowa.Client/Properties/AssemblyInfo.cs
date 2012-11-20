@@ -10,9 +10,9 @@ using System.Windows;
 [assembly: AssemblyTitle("Clowa.Client")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("网中漫步")]
+[assembly: AssemblyCompany("Clowa")]
 [assembly: AssemblyProduct("Clowa.Client")]
-[assembly: AssemblyCopyright("Copyright © 网中漫步 2012")]
+[assembly: AssemblyCopyright("Copyright © Clowa 2012")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -53,3 +53,4 @@ using System.Windows;
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: NeutralResourcesLanguageAttribute("zh-Hans")]
