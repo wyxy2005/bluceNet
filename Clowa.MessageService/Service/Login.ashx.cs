@@ -27,11 +27,20 @@ namespace Clowa.MessageService.Service
             DoNotRedirectToLoginModule.ApplyForRequest(new HttpContextWrapper(context));
             string username;
             string password;
-            if (TryExtractBasicAuthCredentials(context.Request, out username, out password) &&
-                Membership.ValidateUser(username, password))
+            if (TryExtractBasicAuthCredentials(context.Request, out username, out password))
             {
-                FormsAuthentication.SetAuthCookie(username, createPersistentCookie: false);
-            }
+                context.Response.Write("<!--username=" + username + " password=" + password + "-->");
+                if(Membership.ValidateUser(username, password))
+                {
+                       FormsAuthentication.SetAuthCookie(username, createPersistentCookie: false);
+                }
+                else 
+                {
+                    context.Response.StatusCode = 401;
+                    context.Response.Status = "401 Unauthorized";
+                    context.Response.AddHeader("WWW-Authenticate", "Basic");
+                }
+            }  
             else
             {
                 context.Response.StatusCode = 401;

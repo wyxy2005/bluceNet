@@ -16,15 +16,14 @@ namespace Clowa.Client
     public partial class App : Application
     {
         protected override void OnStartup(StartupEventArgs e)
-        {
+        {  
             base.OnStartup(e);
             Bootstrapper.Initialize();
 
             var loginViewModel = new LoginViewModel();
             var loginDialog = Service.ServiceProvider.Instance.Get<ILoginDialog>();
             loginDialog.BindViewModel(loginViewModel);
-            loginDialog.Show();
-
+            loginDialog.Show(); 
         }
     }
 }
