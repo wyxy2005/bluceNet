@@ -1,0 +1,824 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="FullSignature">
+  <Class Name="SignalR.DefaultConfigurationManager" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="22.25" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAACAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAQA=</HashCode>
+      <FileName>Configuration\DefaultConfigurationManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SignalR.Connection" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAEBACAAAAAAHUAAIAAAAAEChAADBAAAAEBIAA=</HashCode>
+      <FileName>Connection.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SignalR.ConnectionManager" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="15.25" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEQAAAAAAgAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>ConnectionManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SignalR.GroupManager" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="22.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgIAAAAAAAAAAAAAAEAABAAAAAAAAAAAAAAAAAAABIA=</HashCode>
+      <FileName>GroupManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SignalR.GuidConnectionIdGenerator" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="2.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GuidConnectionIdGenerator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SignalR.Cookie" Collapsed="true">
+    <Position X="17" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAAAAAAAQAAgAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Hosting\Cookie.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SignalR.HostConstants" Collapsed="true">
+    <Position X="11.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAABAAAAAAAAAAABAAAAAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>Hosting\HostConstants.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SignalR.HostContext" Collapsed="true">
+    <Position X="13.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABACAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Hosting\HostContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SignalR.HostContextExtensions" Collapsed="true">
+    <Position X="15.25" Y="2.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIABAAAAAAAAAAgBAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Hosting\HostContextExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SignalR.RequestExtensions" Collapsed="true">
+    <Position X="18.75" Y="5.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Hosting\RequestExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SignalR.ResponseExtensions" Collapsed="true">
+    <Position X="20.5" Y="5.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Hosting\ResponseExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SignalR.DefaultDependencyResolver" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.5" Y="1.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAACAAAAAAAAAABgAAAAAAAAAACAEA=</HashCode>
+      <FileName>Infrastructure\DefaultDependencyResolver.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SignalR.DependencyResolverExtensions" Collapsed="true">
+    <Position X="18.75" Y="1.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Infrastructure\DependencyResolverExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SignalR.ExceptionsExtensions" Collapsed="true">
+    <Position X="20.5" Y="1.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Infrastructure\ExceptionsExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SignalR.Json" Collapsed="true">
+    <Position X="22.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAIAAAAAAAAEAAAAACAAAAAAAA=</HashCode>
+      <FileName>Json\Json.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SignalR.JsonNetSerializer" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10" Y="4.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAgAAAAAAAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Json\JsonNetSerializer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SignalR.JTokenValue" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAIAAAAAAAA=</HashCode>
+      <FileName>Json\JTokenValue.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SignalR.InMemoryMessage&lt;T&gt;" Collapsed="true">
+    <Position X="6.5" Y="5.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MessageBus\InMemoryMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SignalR.InProcessMessageBus" Collapsed="true">
+    <Position X="0.5" Y="8.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MessageBus\InProcessMessageBus.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SignalR.InProcessMessageBus&lt;T&gt;" Collapsed="true">
+    <Position X="0.5" Y="7.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAKAIAAAAICgAAgAAEQAAAAARAIIEBEoAAAAAAAAIAA=</HashCode>
+      <FileName>MessageBus\InProcessMessageBus.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SignalR.Message" Collapsed="true">
+    <Position X="6.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAEAAAAAAAQBAAAgCAAAAAA=</HashCode>
+      <FileName>MessageBus\Message.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SignalR.WrappedValue" Collapsed="true">
+    <Position X="11.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAEAAEAAAAAAAAAAAACAAAAAAgAAAAAAA=</HashCode>
+      <FileName>MessageBus\WrappedValue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SignalR.PersistentConnection" Collapsed="true">
+    <Position X="3.5" Y="4.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAEEAIAGAARQMAAABBBJUAAAAA6BgAIgAAQgCAIYA=</HashCode>
+      <FileName>PersistentConnection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SignalR.PersistentConnectionContext" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="22.25" Y="4.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PersistentConnectionContext.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SignalR.PersistentConnectionFactory" Collapsed="true">
+    <Position X="10" Y="5.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PersistentConnectionFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SignalR.PersistentResponse" Collapsed="true">
+    <Position X="11.75" Y="5.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAEAAAAAAAAAAAAAAAAAAEACAAAQAAAgA=</HashCode>
+      <FileName>PersistentResponse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SignalR.SignalCommand" Collapsed="true">
+    <Position X="15.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAwAAAIBAA=</HashCode>
+      <FileName>SignalCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SignalR.TaskAsyncHelper" Collapsed="true">
+    <Position X="17" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kAAABRJAAAAAIAAggQIAgAQAAAAIAAABAAAAkAAAAAA=</HashCode>
+      <FileName>TaskAsyncHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SignalR.Hubs.ClientProxy" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAACAAAAABACAAAAAAAAAAAAAAADAA=</HashCode>
+      <FileName>Hubs\ClientProxy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SignalR.Hubs.DefaultAssemblyLocator" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="20.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Hubs\DefaultAssemblyLocator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SignalR.Hubs.DefaultHubActivator" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.75" Y="1.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Hubs\DefaultHubActivator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SignalR.Hubs.DefaultJavaScriptProxyGenerator" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="15.25" Y="1.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAgAAAQAAGAAAAICQAgACAIQAAAAEAAAAADAUA=</HashCode>
+      <FileName>Hubs\DefaultJavaScriptProxyGenerator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SignalR.Hubs.HubManagerExtensions" Collapsed="true">
+    <Position X="10" Y="3.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Hubs\Extensions\HubManagerExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SignalR.Hubs.HubTypeExtensions" Collapsed="true">
+    <Position X="20.5" Y="3.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Hubs\Extensions\HubTypeExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SignalR.Hubs.MethodExtensions" Collapsed="true">
+    <Position X="17" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Hubs\Extensions\MethodExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SignalR.Hubs.Hub" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="17" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAgAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Hubs\Hub.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SignalR.Hubs.HubCallerContext" Collapsed="true">
+    <Position X="18.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAQAAgAAAIAAABCAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Hubs\HubCallerContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SignalR.Hubs.HubContext" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="20.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Hubs\HubContext.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SignalR.Hubs.HubDispatcher" Collapsed="true">
+    <Position X="3.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAgAAAAAgSEAAAgBARAEAAQAABAAAhAEAgCAMQA=</HashCode>
+      <FileName>Hubs\HubDispatcher.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SignalR.Hubs.HubMethodNameAttribute" Collapsed="true">
+    <Position X="11.75" Y="3.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>Hubs\HubMethodNameAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SignalR.Hubs.HubNameAttribute" Collapsed="true">
+    <Position X="13.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Hubs\HubNameAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SignalR.Hubs.HubRequest" Collapsed="true">
+    <Position X="15.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAACAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Hubs\HubRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SignalR.Hubs.HubRequestParser" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="17" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Hubs\HubRequestParser.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SignalR.Hubs.HubResponse" Collapsed="true">
+    <Position X="18.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAwAAAAAAAAQAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Hubs\HubResponse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SignalR.Hubs.DefaultHubManager" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.5" Y="1.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAEAAQEAAAAACAAAAACAAAAAAQAAAAIgAAAAAA=</HashCode>
+      <FileName>Hubs\Lookup\DefaultHubManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SignalR.Hubs.DefaultParameterResolver" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="17" Y="1.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>Hubs\Lookup\DefaultParameterResolver.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SignalR.Hubs.HubDescriptor" Collapsed="true">
+    <Position X="22.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Hubs\Lookup\Descriptors\HubDescriptor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SignalR.Hubs.MethodDescriptor" Collapsed="true">
+    <Position X="15.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAIAAAAAAAQAAAAAAAAAAIAAAAAEAAA=</HashCode>
+      <FileName>Hubs\Lookup\Descriptors\MethodDescriptor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SignalR.Hubs.ParameterDescriptor" Collapsed="true">
+    <Position X="20.5" Y="4.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Hubs\Lookup\Descriptors\ParameterDescriptor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SignalR.Hubs.ReflectedHubDescriptorProvider" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.5" Y="5.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAEAQAAAAAAAAAAAAAAAAAAAAAGAAAABIA=</HashCode>
+      <FileName>Hubs\Lookup\ReflectedHubDescriptorProvider.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SignalR.Hubs.ReflectedMethodDescriptorProvider" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="15.25" Y="5.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>QAAgAAAAAAABAIAAAAAAAAAAACQAAAAAEAAAgAAAAAA=</HashCode>
+      <FileName>Hubs\Lookup\ReflectedMethodDescriptorProvider.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SignalR.Hubs.NullJavaScriptMinifier" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="18.75" Y="4.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Hubs\NullJavaScriptMinifier.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SignalR.Hubs.ReflectionHelper" Collapsed="true">
+    <Position X="17" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAEAAAAAAAAQAAAAAAAAAAAAAAAAAAQAAE=</HashCode>
+      <FileName>Hubs\ReflectionHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SignalR.Hubs.SignalProxy" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAAAABAiAAAAAAAAIAAAAAADAA=</HashCode>
+      <FileName>Hubs\SignalProxy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SignalR.Hubs.StatefulSignalProxy" Collapsed="true">
+    <Position X="0.5" Y="6" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAACIAACAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Hubs\StatefulSignalProxy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SignalR.Hubs.TrackingDictionary" Collapsed="true">
+    <Position X="20.5" Y="6.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACEAAAAAAAAIAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>Hubs\TrackingDictionary.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SignalR.Infrastructure.ConnectionExtensions" Collapsed="true">
+    <Position X="13.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAAAAAAAAAAAAAAACAAAAACAAAA=</HashCode>
+      <FileName>Infrastructure\ConnectionExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SignalR.Infrastructure.CustomStack&lt;T&gt;" Collapsed="true">
+    <Position X="18.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAABAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Infrastructure\CustomStack.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SignalR.Infrastructure.LockedList&lt;T&gt;" Collapsed="true">
+    <Position X="13.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACCAACAEAAgAAAAAAAAAAAAAQEEAAABAQAAA=</HashCode>
+      <FileName>Infrastructure\LockedList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SignalR.Infrastructure.SafeSet&lt;T&gt;" Collapsed="true">
+    <Position X="22.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAIAAAAAAAAAAAAAAAAABAQAABAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Infrastructure\SafeSet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SignalR.Infrastructure.ServerCommand" Collapsed="true">
+    <Position X="10" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAEAAAAAAAAAAAAAQAgAAAAAAA=</HashCode>
+      <FileName>Infrastructure\ServerCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SignalR.Infrastructure.ServerCommandHandler" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.75" Y="6.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAACEAAAAAAAAAAAAQAARAAQAAAECAAACAACAAAAAgA=</HashCode>
+      <FileName>Infrastructure\ServerCommandHandler.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SignalR.Infrastructure.ServerIdManager" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Infrastructure\ServerIdManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SignalR.Infrastructure.TraceManager" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="18.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAIAgCAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Infrastructure\TraceManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SignalR.Transports.ForeverFrameTransport" Collapsed="true">
+    <Position X="0.75" Y="3.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAgAAACAAAAAEAAAACAAAAAQAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Transports\ForeverFrameTransport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SignalR.Transports.ForeverTransport" Collapsed="true">
+    <Position X="3" Y="1.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAABAACAQQAAAFAAAAQAAAhEYQAIIAAAUAgAAAA=</HashCode>
+      <FileName>Transports\ForeverTransport.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SignalR.Transports.LongPollingTransport" Collapsed="true">
+    <Position X="7.5" Y="1.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>BEAgAAAhAAABQQAAAFAAAAQAAAhBIAAEEBAEUAAAAAg=</HashCode>
+      <FileName>Transports\LongPollingTransport.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SignalR.Transports.ServerSentEventsTransport" Collapsed="true">
+    <Position X="5.25" Y="3.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAQAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Transports\ServerSentEventsTransport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SignalR.Transports.TransportDisconnectBase" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>BQYAAEAAggAJBAMoAAAAAoAAAAAAIAIAOAQCBgAEBAE=</HashCode>
+      <FileName>Transports\TransportDisconnectBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SignalR.Transports.TransportHeartBeat" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="22.25" Y="6.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>BAAAogAAAAAggAAAAAIAACAgAAAAABBEAAAAAIEBJQA=</HashCode>
+      <FileName>Transports\TransportHeartBeat.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SignalR.Transports.TransportManager" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEBABAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Transports\TransportManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SignalR.Transports.WebSocketTransport" Collapsed="true">
+    <Position X="3" Y="3.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AQAABAAAAAAABAAAAFAAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Transports\WebSocketTransport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="SignalR.MessageResult" Collapsed="true">
+    <Position X="10" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAAAAAAAAQAAAAAAAQAAAAA=</HashCode>
+      <FileName>MessageBus\MessageResult.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="SignalR.IConfigurationManager" Collapsed="true">
+    <Position X="13.5" Y="10" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAACAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAQA=</HashCode>
+      <FileName>Configuration\IConfigurationManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SignalR.IRequest" Collapsed="true">
+    <Position X="11.75" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAABAAAAAAAAAAAAAAAIAAABCAAAAAAACAAIAAEAAAA=</HashCode>
+      <FileName>Hosting\IRequest.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SignalR.IRequestCookieCollection" Collapsed="true">
+    <Position X="13.5" Y="12.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Hosting\IRequestCookieCollection.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SignalR.IResponse" Collapsed="true">
+    <Position X="15.25" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQgAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Hosting\IResponse.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SignalR.IWebSocket" Collapsed="true">
+    <Position X="17" Y="13" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAEAAAAAAAAAAAAAAAAKAAAAAAAA=</HashCode>
+      <FileName>Hosting\IWebSocket.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SignalR.IConnection" Collapsed="true">
+    <Position X="17" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IConnection.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SignalR.IConnectionIdGenerator" Collapsed="true">
+    <Position X="18.75" Y="10" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IConnectionIdGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SignalR.IConnectionManager" Collapsed="true">
+    <Position X="20.5" Y="10" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAQAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IConnectionManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SignalR.IGroupManager" Collapsed="true">
+    <Position X="11.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAEAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IGroupManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SignalR.IDependencyResolver" Collapsed="true">
+    <Position X="22.25" Y="10" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAABAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Infrastructure\IDependencyResolver.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SignalR.IPersistentConnectionContext" Collapsed="true">
+    <Position X="10" Y="12.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IPersistentConnectionContext.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SignalR.ITransportConnection" Collapsed="true">
+    <Position X="11.75" Y="13" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACBAAAAAAAAA=</HashCode>
+      <FileName>ITransportConnection.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SignalR.IJsonSerializer" Collapsed="true">
+    <Position X="15.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Json\IJsonSerializer.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SignalR.IJsonValue" Collapsed="true">
+    <Position X="17" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAIAAAAAAAA=</HashCode>
+      <FileName>Json\IJsonValue.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SignalR.IIdGenerator&lt;T&gt;" Collapsed="true">
+    <Position X="10" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAAAAAAEAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>MessageBus\IIdGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SignalR.IMessageBus" Collapsed="true">
+    <Position X="18.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MessageBus\IMessageBus.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SignalR.Hubs.IAssemblyLocator" Collapsed="true">
+    <Position X="10" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Hubs\IAssemblyLocator.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SignalR.Hubs.IClientProxy" Collapsed="true">
+    <Position X="11.75" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Hubs\IClientProxy.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SignalR.Hubs.IConnected" Collapsed="true">
+    <Position X="15.25" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Hubs\IConnected.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SignalR.Hubs.IDisconnect" Collapsed="true">
+    <Position X="10" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Hubs\IDisconnect.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SignalR.Hubs.IHub" Collapsed="true">
+    <Position X="13.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAgAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Hubs\IHub.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SignalR.Hubs.IHubActivator" Collapsed="true">
+    <Position X="15.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Hubs\IHubActivator.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SignalR.Hubs.IHubContext" Collapsed="true">
+    <Position X="17" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Hubs\IHubContext.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SignalR.Hubs.IHubRequestParser" Collapsed="true">
+    <Position X="22.25" Y="10.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Hubs\IHubRequestParser.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SignalR.Hubs.IJavaScriptMinifier" Collapsed="true">
+    <Position X="11.75" Y="11.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Hubs\IJavaScriptMinifier.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SignalR.Hubs.IJavaScriptProxyGenerator" Collapsed="true">
+    <Position X="13.5" Y="11.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Hubs\IJavaScriptProxyGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SignalR.Hubs.IHubDescriptorProvider" Collapsed="true">
+    <Position X="18.75" Y="10.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>Hubs\Lookup\IHubDescriptorProvider.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SignalR.Hubs.IHubManager" Collapsed="true">
+    <Position X="20.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAEAAAAACAAAAACAAAAAAQAAAAIAAAAAAA=</HashCode>
+      <FileName>Hubs\Lookup\IHubManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SignalR.Hubs.IMethodDescriptorProvider" Collapsed="true">
+    <Position X="20.5" Y="11.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>QAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Hubs\Lookup\IMethodDescriptorProvider.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SignalR.Hubs.IParameterResolver" Collapsed="true">
+    <Position X="22.25" Y="11.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>Hubs\Lookup\IParameterResolver.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SignalR.Infrastructure.IServerCommandHandler" Collapsed="true">
+    <Position X="17" Y="12.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Infrastructure\IServerCommandHandler.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SignalR.Infrastructure.IServerIdManager" Collapsed="true">
+    <Position X="18.75" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Infrastructure\IServerIdManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SignalR.Infrastructure.ITraceManager" Collapsed="true">
+    <Position X="20.5" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAACAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Infrastructure\ITraceManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SignalR.Transports.ITrackingConnection" Collapsed="true">
+    <Position X="22.25" Y="12.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>BQYAAAAAAAABAAAgAAAAAgAAAAAAAAIACAQAAAAAAAA=</HashCode>
+      <FileName>Transports\ITrackingConnection.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SignalR.Transports.ITransport" Collapsed="true">
+    <Position X="10" Y="13" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEABAAAAQQAgAFAAAAAAAAhAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Transports\ITransport.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SignalR.Transports.ITransportHeartBeat" Collapsed="true">
+    <Position X="13.5" Y="13" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAEBAAA=</HashCode>
+      <FileName>Transports\ITransportHeartBeat.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SignalR.Transports.ITransportManager" Collapsed="true">
+    <Position X="15.25" Y="13" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEBAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Transports\ITransportManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="SignalR.CommandType" Collapsed="true">
+    <Position X="10" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAABCAAAAAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>CommandType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SignalR.Infrastructure.ServerCommandType" Collapsed="true">
+    <Position X="11.75" Y="14" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Infrastructure\ServerCommandType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="宋体" Size="9" />
+</ClassDiagram>

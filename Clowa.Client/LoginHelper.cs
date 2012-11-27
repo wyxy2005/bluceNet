@@ -17,8 +17,10 @@ namespace Clowa.Client
             //webRequest.PreAuthenticate = true;
             //webRequest.KeepAlive = true;
             webRequest.Credentials = new NetworkCredential(userName, password);
+            //CredentialCache myCache = new CredentialCache();
+            //myCache.Add(uri, "Basic", new NetworkCredential(userName, password));
+            //webRequest.Credentials = myCache;
             webRequest.CookieContainer = new CookieContainer();
-
             var tcs = new TaskCompletionSource<AuthenticationResult>();
             webRequest.BeginGetResponse(ar =>
             {

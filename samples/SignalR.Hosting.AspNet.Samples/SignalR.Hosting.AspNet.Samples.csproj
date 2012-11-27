@@ -226,6 +226,10 @@
       <Project>{1B9A82C4-BCA1-4834-A33E-226F17BE070B}</Project>
       <Name>SignalR</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\System.Web.Providers\System.Web.Providers.csproj">
+      <Project>{DAFADAC5-9B1C-4EA0-AD3B-603DCD61FFA7}</Project>
+      <Name>System.Web.Providers</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="SignalR.Samples.master" />

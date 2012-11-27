@@ -15,7 +15,7 @@
 [assembly: global::System.Data.Objects.DataClasses.EdmRelationshipAttribute("Clowa.EFProviders.Models", "UsersInRoles", "Role", global::System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(Clowa.EFProviders.Role), "User", global::System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(Clowa.EFProviders.User))]
 
 // 原始文件名:
-// 生成日期: 2012-11-26 17:31:13
+// 生成日期: 2012-11-27 12:22:31
 namespace Clowa.EFProviders
 {
     

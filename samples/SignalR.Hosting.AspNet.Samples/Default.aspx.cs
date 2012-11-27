@@ -6,7 +6,8 @@ namespace SignalR.Samples
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            this.Session.Add("test", "bbbbbb");
+            Response.Write("<!-- test " + this.Session["test"].ToString() + "-->");
         }
     }
 }

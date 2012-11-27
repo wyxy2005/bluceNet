@@ -36,8 +36,8 @@ namespace Clowa.MessageService.Service
                 }
                 else 
                 {
-                    context.Response.StatusCode = 401;
-                    context.Response.Status = "401 Unauthorized";
+                    context.Response.StatusCode = 403;
+                    context.Response.Status = "403 Unauthorized";
                     context.Response.AddHeader("WWW-Authenticate", "Basic");
                 }
             }  
@@ -60,7 +60,7 @@ namespace Clowa.MessageService.Service
         {
             username = null;
             password = null;
-
+            //authorizationHeader = " Basic d3l4eTIwMDU6MTM1NjEzODc=";
             if (String.IsNullOrEmpty(authorizationHeader))
             {
                 return false;

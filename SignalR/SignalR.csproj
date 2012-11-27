@@ -163,6 +163,7 @@
     <None Include="Properties\SignalR.nuspec">
       <SubType>Designer</SubType>
     </None>
+    <None Include="SignalR.classdiagram.cd" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Scripts\hubs.js" />

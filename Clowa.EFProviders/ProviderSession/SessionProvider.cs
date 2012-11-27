@@ -1,29 +1,20 @@
-﻿namespace System.Web.Providers
-{
-    using System;
-    using System.Collections.Specialized;
-    using System.Configuration;
-    using System.Configuration.Provider;
-    using System.Globalization;
-    using System.IO;
-    using System.IO.Compression;
-    using System.Runtime.CompilerServices;
-    using System.Runtime.InteropServices;
-    using System.Security;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using System.Web;
-    using System.Web.Configuration;
-    using System.Web.Providers.Entities;
-    using System.Web.Providers.Resources;
-    using System.Web.SessionState;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Web.SessionState;
+using System.Web;
+using System.IO;
+using Clowa.EFProviders.Resources;
+using System.Collections.Specialized;
 
-    public class DefaultSessionStateProvider : SessionStateStoreProviderBase
+namespace Clowa.EFProviders.ProviderSession
+{
+    public class SessionProvider: SessionStateStoreProviderBase
     {
         private long _lastSessionPurgeTicks;
-        private const int ITEM_SHORT_LENGTH = 0x1b58;
+        private const int ITEM_SHORT_LENGTH = 0x1b58;//7000
         private const double SessionExpiresFrequencyCheckInSeconds = 30.0;
-
         private static string AppendAppIdHash(string id)
         {
             string str2 = GetAppDomainAppId().GetHashCode().ToString("X8", CultureInfo.InvariantCulture);
@@ -38,7 +29,6 @@
         {
             return (TimeSpan.FromTicks(DateTime.UtcNow.Ticks - this.LastSessionPurgeTicks).TotalSeconds > 30.0);
         }
-
         public override SessionStateStoreData CreateNewStoreData(HttpContext context, int timeout)
         {
             HttpStaticObjectsCollection staticObjects = null;
@@ -144,14 +134,14 @@
                 Session session = context2.Sessions.Find(new object[] { id });
                 if ((session != null) && (session.Expires > DateTime.UtcNow))
                 {
-                    session.Expires = DateTime.UtcNow.AddMinutes((double) session.Timeout);
+                    session.Expires = DateTime.UtcNow.AddMinutes((double)session.Timeout);
                     locked = session.Locked;
                     lockId = session.LockCookie;
                     SessionStateStoreData data = null;
                     if (locked)
                     {
-                        TimeSpan span = (TimeSpan) (DateTime.UtcNow - session.LockDate);
-                        lockAge = TimeSpan.FromSeconds((double) span.Seconds);
+                        TimeSpan span = (TimeSpan)(DateTime.UtcNow - session.LockDate);
+                        lockAge = TimeSpan.FromSeconds((double)span.Seconds);
                     }
                     else
                     {
@@ -220,7 +210,7 @@
             config.Remove("connectionStringName");
             try
             {
-                SessionStateSection section = (SessionStateSection) ConfigurationManager.GetSection("system.web/sessionState");
+                SessionStateSection section = (SessionStateSection)ConfigurationManager.GetSection("system.web/sessionState");
                 this.CompressionEnabled = section.CompressionEnabled;
             }
             catch (SecurityException)
@@ -255,7 +245,7 @@
             session.Created = utcNow;
             session.SessionId = id;
             session.Timeout = timeout;
-            session.Expires = utcNow.AddMinutes((double) timeout);
+            session.Expires = utcNow.AddMinutes((double)timeout);
             session.Locked = false;
             session.LockDate = utcNow;
             session.LockCookie = 0;
@@ -269,8 +259,9 @@
             {
                 using (SessionContext context = ModelHelper.CreateSessionContext(this.ConnectionString))
                 {
-                    foreach (Session session in context.Sessions)// select s
-                        //where s.Expires < DateTime.UtcNow )
+                    foreach (Session session in from s in context.Sessions
+                                                where s.Expires < DateTime.UtcNow
+                                                select s)
                     {
                         context.Sessions.Remove(session);
                     }
@@ -290,7 +281,8 @@
             {
                 if (action == null)
                 {
-                    action = delegate {
+                    action = delegate
+                    {
                         this.PurgeExpiredSessions();
                     };
                 }
@@ -319,7 +311,7 @@
         {
             id = AppendAppIdHash(id);
             Session session = db.Sessions.Find(new object[] { id });
-            if (((session != null) && session.Locked) && (session.LockCookie == ((int) lockId)))
+            if (((session != null) && session.Locked) && (session.LockCookie == ((int)lockId)))
             {
                 session.Locked = false;
             }
@@ -339,7 +331,7 @@
             using (SessionContext context2 = ModelHelper.CreateSessionContext(this.ConnectionString))
             {
                 Session entity = context2.Sessions.Find(new object[] { id });
-                if ((entity != null) && (entity.LockCookie == ((int) lockId)))
+                if ((entity != null) && (entity.LockCookie == ((int)lockId)))
                 {
                     context2.Sessions.Remove(entity);
                     context2.SaveChanges();
@@ -363,7 +355,7 @@
                 Session session = context2.Sessions.Find(new object[] { id });
                 if (session != null)
                 {
-                    session.Expires = DateTime.UtcNow.AddMinutes((double) session.Timeout);
+                    session.Expires = DateTime.UtcNow.AddMinutes((double)session.Timeout);
                     context2.SaveChanges();
                 }
             }
@@ -395,13 +387,13 @@
             writer.Write(flag2);
             if (flag)
             {
-                ((SessionStateItemCollection) item.Items).Serialize(writer);
+                ((SessionStateItemCollection)item.Items).Serialize(writer);
             }
             if (flag2)
             {
                 item.StaticObjects.Serialize(writer);
             }
-            writer.Write((byte) 0xff);
+            writer.Write((byte)0xff);
         }
 
         private static void SerializeStoreData(SessionStateStoreData item, int initialStreamSize, out byte[] buf, out int length, bool compressionEnabled)
@@ -412,7 +404,7 @@
                 if (compressionEnabled)
                 {
                     byte[] buffer = stream.GetBuffer();
-                    int count = (int) stream.Length;
+                    int count = (int)stream.Length;
                     stream.SetLength(0);
                     using (DeflateStream stream2 = new DeflateStream(stream, CompressionMode.Compress, true))
                     {
@@ -421,7 +413,7 @@
                     stream.WriteByte(0xff);
                 }
                 buf = stream.GetBuffer();
-                length = (int) stream.Length;
+                length = (int)stream.Length;
             }
         }
 
@@ -466,7 +458,7 @@
                     }
                     else
                     {
-                        entity.LockCookie = (int) lockId;
+                        entity.LockCookie = (int)lockId;
                     }
                     entity.Locked = false;
                     entity.Timeout = item.Timeout;
@@ -498,4 +490,3 @@
         }
     }
 }
-

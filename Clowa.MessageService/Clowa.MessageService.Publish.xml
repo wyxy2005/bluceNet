@@ -4,103 +4,111 @@
     <file relUrl="Views/Home/Index.aspx" publishTime="11/15/2012 17:08:08" />
     <file relUrl="Service/Login.ashx" publishTime="11/15/2012 17:16:07" />
     <file relUrl="Scripts/jquery-1.6.4.js" publishTime="11/15/2012 17:00:05" />
-    <file relUrl="bin/Clowa.MessageService.dll" publishTime="11/26/2012 14:00:52" />
+    <file relUrl="bin/Clowa.MessageService.dll" publishTime="11/27/2012 16:47:24" />
     <file relUrl="Global.asax" publishTime="11/15/2012 12:26:39" />
     <file relUrl="bin/EntityFramework.xml" publishTime="11/15/2012 16:45:41" />
-    <file relUrl="bin/Scripts/jquery.signalR.core.js" publishTime="11/15/2012 17:21:14" />
     <file relUrl="bin/System.Web.Providers.dll" publishTime="11/15/2012 16:45:42" />
+    <file relUrl="Message/index.html" publishTime="11/27/2012 16:44:23" />
     <file relUrl="Views/Shared/LogOnUserControl.ascx" publishTime="11/15/2012 12:26:39" />
-    <file relUrl="bin/SignalR.Hosting.Common.dll" publishTime="11/26/2012 13:50:25" />
+    <file relUrl="bin/SignalR.Hosting.Common.dll" publishTime="11/27/2012 11:48:23" />
     <file relUrl="Scripts/jquery-1.6.4.min.js" publishTime="11/15/2012 17:00:05" />
-    <file relUrl="bin/System.Web.Helpers.dll" publishTime="01/05/2011 15:45:38" />
-    <file relUrl="bin/SignalR.Hosting.AspNet.xml" publishTime="11/26/2012 13:50:25" />
+    <file relUrl="bin/System.Windows.Interactivity.dll" publishTime="11/20/2012 10:57:34" />
+    <file relUrl="bin/Clowa.EFProviders.pdb" publishTime="11/27/2012 12:23:56" />
+    <file relUrl="bin/SignalR.Hosting.AspNet.xml" publishTime="11/27/2012 11:48:23" />
     <file relUrl="Service/Web.config" publishTime="11/16/2012 16:19:46" />
-    <file relUrl="bin/SignalR.Hosting.Common.pdb" publishTime="11/26/2012 13:50:25" />
+    <file relUrl="bin/SignalR.Hosting.Common.pdb" publishTime="11/27/2012 11:48:23" />
     <file relUrl="bin/Newtonsoft.Json.xml" publishTime="11/15/2012 16:45:23" />
-    <file relUrl="bin/MembershipService.WebForms.dll" publishTime="11/15/2012 17:18:26" />
-    <file relUrl="bin/SignalR.dll" publishTime="11/26/2012 13:50:25" />
-    <file relUrl="bin/Clowa.MessageService.pdb" publishTime="11/26/2012 14:00:52" />
-    <file relUrl="bin/SignalR.Hosting.Common.xml" publishTime="11/26/2012 13:50:25" />
+    <file relUrl="bin/SignalR.dll" publishTime="11/27/2012 11:48:21" />
+    <file relUrl="bin/Clowa.MessageService.pdb" publishTime="11/27/2012 16:47:24" />
+    <file relUrl="bin/SignalR.Hosting.Common.xml" publishTime="11/27/2012 11:48:23" />
     <file relUrl="bin/System.Web.WebPages.dll" publishTime="01/05/2011 15:45:38" />
-    <file relUrl="packages.config" publishTime="11/20/2012 10:59:13" />
-    <file relUrl="bin/Clowa.Models.dll" publishTime="11/26/2012 13:50:25" />
-    <file relUrl="bin/Clowa.Models.pdb" publishTime="11/26/2012 13:50:25" />
+    <file relUrl="packages.config" publishTime="11/26/2012 17:39:43" />
+    <file relUrl="bin/Clowa.Models.dll" publishTime="11/27/2012 15:31:02" />
+    <file relUrl="Scripts/jquery.signalR.core.js" publishTime="11/15/2012 17:21:14" />
+    <file relUrl="bin/Clowa.Models.pdb" publishTime="11/27/2012 15:31:02" />
     <file relUrl="Views/Account/LogOn.aspx" publishTime="11/15/2012 16:13:08" />
+    <file relUrl="bin/SignalR.Hosting.AspNet.dll" publishTime="11/27/2012 11:48:23" />
     <file relUrl="Views/Account/Register.aspx" publishTime="11/15/2012 12:26:39" />
     <file relUrl="bin/System.Web.Mvc.dll" publishTime="01/05/2011 17:42:16" />
     <file relUrl="bin/Newtonsoft.Json.dll" publishTime="11/15/2012 16:45:23" />
     <file relUrl="Views/Account/ChangePassword.aspx" publishTime="11/15/2012 12:26:39" />
-    <file relUrl="bin/SignalR.Hosting.AspNet.pdb" publishTime="11/26/2012 13:50:25" />
-    <file relUrl="bin/SignalR.xml" publishTime="11/26/2012 13:50:24" />
+    <file relUrl="bin/SignalR.Hosting.AspNet.pdb" publishTime="11/27/2012 11:48:23" />
+    <file relUrl="bin/SignalR.xml" publishTime="11/27/2012 11:48:21" />
+    <file relUrl="bin/Clowa.EFProviders.dll" publishTime="11/27/2012 12:23:56" />
+    <file relUrl="Content/Site.css" publishTime="11/15/2012 12:26:39" />
     <file relUrl="Views/Account/ChangePasswordSuccess.aspx" publishTime="11/15/2012 12:26:39" />
     <file relUrl="Views/Shared/Site.Master" publishTime="11/15/2012 17:20:41" />
-    <file relUrl="bin/SignalR.pdb" publishTime="11/26/2012 13:50:24" />
+    <file relUrl="bin/SignalR.pdb" publishTime="11/27/2012 11:48:21" />
     <file relUrl="bin/MembershipService.Common.dll" publishTime="11/15/2012 17:18:26" />
     <file relUrl="Views/Shared/Error.aspx" publishTime="11/15/2012 12:26:39" />
     <file relUrl="Scripts/jquery-1.6.4-vsdoc.js" publishTime="11/15/2012 17:00:05" />
     <file relUrl="bin/System.Web.WebPages.Deployment.dll" publishTime="01/05/2011 15:45:38" />
-    <file relUrl="bin/System.Windows.Interactivity.dll" publishTime="11/20/2012 10:57:34" />
+    <file relUrl="bin/MembershipService.WebForms.dll" publishTime="11/15/2012 17:18:26" />
     <file relUrl="bin/Microsoft.Web.Infrastructure.dll" publishTime="01/05/2011 15:45:38" />
-    <file relUrl="Web.config" publishTime="11/26/2012 13:50:52" />
-    <file relUrl="Content/Site.css" publishTime="11/15/2012 12:26:39" />
-    <file relUrl="bin/System.Web.Razor.dll" publishTime="01/05/2011 15:45:38" />
+    <file relUrl="Web.config" publishTime="11/27/2012 14:09:01" />
+    <file relUrl="bin/System.Web.Helpers.dll" publishTime="01/05/2011 15:45:38" />
     <file relUrl="Views/Home/About.aspx" publishTime="11/15/2012 12:26:39" />
     <file relUrl="bin/EntityFramework.dll" publishTime="11/15/2012 16:45:41" />
-    <file relUrl="bin/SignalR.Hosting.AspNet.dll" publishTime="11/26/2012 13:50:25" />
+    <file relUrl="bin/System.Web.Razor.dll" publishTime="01/05/2011 15:45:38" />
     <file relUrl="Views/Web.config" publishTime="11/15/2012 12:26:39" />
     <file relUrl="bin/System.Web.WebPages.Razor.dll" publishTime="01/05/2011 15:45:38" />
-    <file relUrl="Scripts/jquery.signalR.core.js" publishTime="11/15/2012 17:21:14" />
+    <file relUrl="bin/Scripts/jquery.signalR.core.js" publishTime="11/15/2012 17:21:14" />
   </publishProfile>
   <publishProfile publishUrl="D:\WebSite\www.clowa.com" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="localhost" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="bin/Microsoft.Web.Infrastructure.dll" publishTime="01/05/2011 15:45:38" />
     <file relUrl="Views/Home/Index.aspx" publishTime="11/15/2012 17:08:08" />
-    <file relUrl="bin/System.Windows.Interactivity.dll" publishTime="11/20/2012 10:57:34" />
-    <file relUrl="Scripts/jquery-1.6.4-vsdoc.js" publishTime="11/15/2012 17:00:05" />
-    <file relUrl="bin/Clowa.MessageService.dll" publishTime="11/26/2012 17:56:47" />
+    <file relUrl="bin/System.Web.Razor.dll" publishTime="01/05/2011 15:45:38" />
+    <file relUrl="Scripts/jquery-1.6.4.js" publishTime="11/15/2012 17:00:05" />
+    <file relUrl="bin/Newtonsoft.Json.dll" publishTime="11/15/2012 16:45:23" />
+    <file relUrl="bin/Clowa.MessageService.dll" publishTime="11/27/2012 16:47:24" />
     <file relUrl="Global.asax" publishTime="11/15/2012 12:26:39" />
     <file relUrl="bin/EntityFramework.xml" publishTime="11/15/2012 16:45:41" />
-    <file relUrl="Service/Login.ashx" publishTime="11/15/2012 17:16:07" />
+    <file relUrl="bin/Scripts/jquery.signalR.core.js" publishTime="11/15/2012 17:21:14" />
+    <file relUrl="Message/index.html" publishTime="11/27/2012 16:44:23" />
     <file relUrl="Views/Shared/LogOnUserControl.ascx" publishTime="11/15/2012 12:26:39" />
-    <file relUrl="bin/SignalR.Hosting.Common.dll" publishTime="11/26/2012 13:50:25" />
-    <file relUrl="Scripts/jquery-1.6.4.min.js" publishTime="11/15/2012 17:00:05" />
-    <file relUrl="Scripts/jquery.signalR.core.js" publishTime="11/15/2012 17:21:14" />
-    <file relUrl="bin/SignalR.Hosting.AspNet.xml" publishTime="11/26/2012 13:50:25" />
-    <file relUrl="Scripts/jquery-1.6.4.js" publishTime="11/15/2012 17:00:05" />
-    <file relUrl="Views/Account/Register.aspx" publishTime="11/15/2012 12:26:39" />
-    <file relUrl="bin/SignalR.Hosting.Common.pdb" publishTime="11/26/2012 13:50:25" />
+    <file relUrl="bin/SignalR.Hosting.Common.dll" publishTime="11/27/2012 11:48:23" />
+    <file relUrl="Views/Home/About.aspx" publishTime="11/15/2012 12:26:39" />
+    <file relUrl="Service/Web.config" publishTime="11/16/2012 16:19:46" />
+    <file relUrl="bin/Clowa.EFProviders.pdb" publishTime="11/27/2012 12:23:56" />
+    <file relUrl="bin/SignalR.Hosting.AspNet.xml" publishTime="11/27/2012 11:48:23" />
+    <file relUrl="Service/Login.ashx" publishTime="11/15/2012 17:16:07" />
+    <file relUrl="bin/SignalR.Hosting.Common.pdb" publishTime="11/27/2012 11:48:23" />
     <file relUrl="bin/Newtonsoft.Json.xml" publishTime="11/15/2012 16:45:23" />
-    <file relUrl="bin/SignalR.dll" publishTime="11/26/2012 13:50:25" />
-    <file relUrl="bin/Clowa.MessageService.pdb" publishTime="11/26/2012 17:56:47" />
+    <file relUrl="bin/SignalR.dll" publishTime="11/27/2012 11:48:21" />
+    <file relUrl="bin/Clowa.MessageService.pdb" publishTime="11/27/2012 16:47:24" />
+    <file relUrl="Message/dotnetfx40/dotNetFx40LP_Full_x86_x64zh-Hans.exe" publishTime="05/04/2010 14:30:04" />
     <file relUrl="bin/System.Web.Helpers.dll" publishTime="01/05/2011 15:45:38" />
     <file relUrl="bin/System.Web.WebPages.dll" publishTime="01/05/2011 15:45:38" />
     <file relUrl="packages.config" publishTime="11/26/2012 17:39:43" />
-    <file relUrl="Views/Shared/Site.Master" publishTime="11/15/2012 17:20:41" />
-    <file relUrl="bin/Clowa.Models.dll" publishTime="11/26/2012 13:50:25" />
-    <file relUrl="Views/Shared/Error.aspx" publishTime="11/15/2012 12:26:39" />
-    <file relUrl="Views/Home/About.aspx" publishTime="11/15/2012 12:26:39" />
+    <file relUrl="bin/Clowa.Models.dll" publishTime="11/27/2012 15:31:02" />
+    <file relUrl="bin/Clowa.Models.pdb" publishTime="11/27/2012 15:31:02" />
     <file relUrl="Views/Account/LogOn.aspx" publishTime="11/15/2012 16:13:08" />
-    <file relUrl="bin/Clowa.Models.pdb" publishTime="11/26/2012 13:50:25" />
+    <file relUrl="Message/dotnetfx40/dotNetFx40_Full_x86_x64.exe" publishTime="03/19/2010 09:44:38" />
+    <file relUrl="Views/Account/Register.aspx" publishTime="11/15/2012 12:26:39" />
     <file relUrl="bin/System.Web.Mvc.dll" publishTime="01/05/2011 17:42:16" />
-    <file relUrl="bin/Newtonsoft.Json.dll" publishTime="11/15/2012 16:45:23" />
+    <file relUrl="bin/System.Windows.Interactivity.dll" publishTime="11/20/2012 10:57:34" />
     <file relUrl="Views/Account/ChangePassword.aspx" publishTime="11/15/2012 12:26:39" />
-    <file relUrl="bin/SignalR.Hosting.AspNet.pdb" publishTime="11/26/2012 13:50:25" />
-    <file relUrl="bin/SignalR.xml" publishTime="11/26/2012 13:50:24" />
-    <file relUrl="bin/Clowa.EFProviders.dll" publishTime="11/26/2012 17:45:28" />
+    <file relUrl="bin/SignalR.Hosting.AspNet.pdb" publishTime="11/27/2012 11:48:23" />
+    <file relUrl="bin/SignalR.xml" publishTime="11/27/2012 11:48:21" />
+    <file relUrl="bin/Clowa.EFProviders.dll" publishTime="11/27/2012 12:23:56" />
+    <file relUrl="Message/setup.exe" publishTime="11/27/2012 16:44:22" />
     <file relUrl="Views/Account/ChangePasswordSuccess.aspx" publishTime="11/15/2012 12:26:39" />
-    <file relUrl="bin/SignalR.Hosting.Common.xml" publishTime="11/26/2012 13:50:25" />
-    <file relUrl="bin/SignalR.pdb" publishTime="11/26/2012 13:50:24" />
+    <file relUrl="Views/Shared/Site.Master" publishTime="11/15/2012 17:20:41" />
+    <file relUrl="bin/SignalR.pdb" publishTime="11/27/2012 11:48:21" />
     <file relUrl="bin/MembershipService.Common.dll" publishTime="11/15/2012 17:18:26" />
-    <file relUrl="Views/Web.config" publishTime="11/15/2012 12:26:39" />
-    <file relUrl="bin/System.Web.Razor.dll" publishTime="01/05/2011 15:45:38" />
+    <file relUrl="Views/Shared/Error.aspx" publishTime="11/15/2012 12:26:39" />
+    <file relUrl="Scripts/jquery-1.6.4-vsdoc.js" publishTime="11/15/2012 17:00:05" />
     <file relUrl="bin/System.Web.WebPages.Deployment.dll" publishTime="01/05/2011 15:45:38" />
     <file relUrl="bin/MembershipService.WebForms.dll" publishTime="11/15/2012 17:18:26" />
-    <file relUrl="bin/Microsoft.Web.Infrastructure.dll" publishTime="01/05/2011 15:45:38" />
-    <file relUrl="Web.config" publishTime="11/26/2012 17:57:42" />
+    <file relUrl="Scripts/jquery-1.6.4.min.js" publishTime="11/15/2012 17:00:05" />
+    <file relUrl="Web.config" publishTime="11/27/2012 14:09:01" />
     <file relUrl="Content/Site.css" publishTime="11/15/2012 12:26:39" />
-    <file relUrl="Service/Web.config" publishTime="11/16/2012 16:19:46" />
+    <file relUrl="bin/SignalR.Hosting.Common.xml" publishTime="11/27/2012 11:48:23" />
     <file relUrl="bin/EntityFramework.dll" publishTime="11/15/2012 16:45:41" />
-    <file relUrl="bin/SignalR.Hosting.AspNet.dll" publishTime="11/26/2012 13:50:25" />
-    <file relUrl="bin/Clowa.EFProviders.pdb" publishTime="11/26/2012 17:45:28" />
+    <file relUrl="Message/windowsinstaller3_1/WindowsInstaller-KB893803-v2-x86.exe" publishTime="12/16/2009 04:10:18" />
+    <file relUrl="bin/SignalR.Hosting.AspNet.dll" publishTime="11/27/2012 11:48:23" />
+    <file relUrl="Views/Web.config" publishTime="11/15/2012 12:26:39" />
     <file relUrl="bin/System.Web.WebPages.Razor.dll" publishTime="01/05/2011 15:45:38" />
-    <file relUrl="bin/Scripts/jquery.signalR.core.js" publishTime="11/15/2012 17:21:14" />
+    <file relUrl="Scripts/jquery.signalR.core.js" publishTime="11/15/2012 17:21:14" />
   </publishProfile>
 </publishData>

@@ -9,6 +9,7 @@
     <AssemblyName>System.Web.Providers</AssemblyName>
     <OutputType>Library</OutputType>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -29,6 +30,10 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <Reference Include="EntityFramework">
@@ -44,6 +49,7 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data.Entity" />
+    <Compile Include="DefaultSessionStateProvider.cs" />
     <Compile Include="Global.cs" />
     <Compile Include="DefaultMembershipProvider.cs" />
     <Compile Include="Entities\Application.cs" />
@@ -60,5 +66,10 @@
     <Compile Include="ValidationHelper.cs" />
     <Compile Include="Resources\ProviderResources.cs" />
     <EmbeddedResource Include="System.Web.Providers.Resources.ProviderResources.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
 </Project>

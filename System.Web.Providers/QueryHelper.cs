@@ -32,38 +32,42 @@
 
         internal static bool DuplicateEmailExists(MembershipContext ctx, string applicationName, Guid userId, string email)
         {
-            return ((from m in ctx.Memberships
-                join a in ctx.Applications on m.ApplicationId equals a.ApplicationId into a
-                where ((a.ApplicationName.ToLower() == applicationName.ToLower()) && (m.Email.ToLower() == email.ToLower())) && (userId != m.UserId)
-                select m).FirstOrDefault<MembershipEntity>() != null);
+            //return ((from m in ctx.Memberships
+            //    join a in ctx.Applications on m.ApplicationId equals a.ApplicationId into a
+            //    where ((a.ApplicationName.ToLower() == applicationName.ToLower()) && (m.Email.ToLower() == email.ToLower())) && (userId != m.UserId)
+            //    select m).FirstOrDefault<MembershipEntity>() != null);
+            return true;
         }
 
         internal static IQueryable<EFMembershipUser> GetAllMembershipUsers(MembershipContext ctx, string applicationName)
         {
-            return (from u in (from u in ctx.Users
-                join a in ctx.Applications on u.ApplicationId equals a.ApplicationId into a
-                join m in ctx.Memberships on u.UserId equals m.UserId into m
-                where a.ApplicationName.ToLower() == applicationName.ToLower()
-                select new EFMembershipUser { UserName = u.UserName, UserId = u.UserId, Email = m.Email, PasswordQuestion = m.PasswordQuestion, Comment = m.Comment, IsApproved = m.IsApproved, IsLockedOut = m.IsLockedOut, CreateDate = m.CreateDate, LastLoginDate = m.LastLoginDate, LastActivityDate = u.LastActivityDate, LastPasswordChangedDate = m.LastPasswordChangedDate, LastLockoutDate = m.LastLockoutDate }).Distinct<EFMembershipUser>()
-                orderby u.UserName
-                select u);
+            //return (from u in (from u in ctx.Users
+            //    join a in ctx.Applications on u.ApplicationId equals a.ApplicationId into a
+            //    join m in ctx.Memberships on u.UserId equals m.UserId into m
+            //    where a.ApplicationName.ToLower() == applicationName.ToLower()
+            //    select new EFMembershipUser { UserName = u.UserName, UserId = u.UserId, Email = m.Email, PasswordQuestion = m.PasswordQuestion, Comment = m.Comment, IsApproved = m.IsApproved, IsLockedOut = m.IsLockedOut, CreateDate = m.CreateDate, LastLoginDate = m.LastLoginDate, LastActivityDate = u.LastActivityDate, LastPasswordChangedDate = m.LastPasswordChangedDate, LastLockoutDate = m.LastLockoutDate }).Distinct<EFMembershipUser>()
+            //    orderby u.UserName
+            //    select u);
+            return null;
         }
 
         internal static IQueryable<DbDataRecord> GetAllMembershipUsersLikeEmail(MembershipContext ctx, string applicationName, string email)
         {
-            if (string.IsNullOrEmpty(email))
-            {
-                string str = "select u.UserName, u.UserId, m.Email, m.PasswordQuestion, m.Comment, m.IsApproved, m.IsLockedOut, m.CreateDate, m.LastLoginDate, u.LastActivityDate, m.LastPasswordChangedDate, m.LastLockoutDate FROM Users as u, Memberships as m, Applications as a WHERE ToLower(a.ApplicationName) = @appName AND a.ApplicationId = m.ApplicationId AND m.UserId = u.UserId AND m.email = null ORDER BY u.UserName";
-                return ctx.ObjectContext.CreateQuery<DbDataRecord>(str, new ObjectParameter[] { new ObjectParameter("appName", applicationName.ToLowerInvariant()) });
-            }
-            string queryString = "select u.UserName, u.UserId, m.Email, m.PasswordQuestion, m.Comment, m.IsApproved, m.IsLockedOut, m.CreateDate, m.LastLoginDate, u.LastActivityDate, m.LastPasswordChangedDate, m.LastLockoutDate FROM Users as u, Memberships as m, Applications as a WHERE ToLower(a.ApplicationName) = @appName AND a.ApplicationId = m.ApplicationId AND m.UserId = u.UserId AND ToLower(m.email) LIKE @email  ORDER BY u.UserName";
-            return ctx.ObjectContext.CreateQuery<DbDataRecord>(queryString, new ObjectParameter[] { new ObjectParameter("appName", applicationName.ToLowerInvariant()), new ObjectParameter("email", email.ToLowerInvariant()) });
+            //if (string.IsNullOrEmpty(email))
+            //{
+            //    string str = "select u.UserName, u.UserId, m.Email, m.PasswordQuestion, m.Comment, m.IsApproved, m.IsLockedOut, m.CreateDate, m.LastLoginDate, u.LastActivityDate, m.LastPasswordChangedDate, m.LastLockoutDate FROM Users as u, Memberships as m, Applications as a WHERE ToLower(a.ApplicationName) = @appName AND a.ApplicationId = m.ApplicationId AND m.UserId = u.UserId AND m.email = null ORDER BY u.UserName";
+            //    return ctx.ObjectContext.CreateQuery<DbDataRecord>(str, new ObjectParameter[] { new ObjectParameter("appName", applicationName.ToLowerInvariant()) });
+            //}
+            //string queryString = "select u.UserName, u.UserId, m.Email, m.PasswordQuestion, m.Comment, m.IsApproved, m.IsLockedOut, m.CreateDate, m.LastLoginDate, u.LastActivityDate, m.LastPasswordChangedDate, m.LastLockoutDate FROM Users as u, Memberships as m, Applications as a WHERE ToLower(a.ApplicationName) = @appName AND a.ApplicationId = m.ApplicationId AND m.UserId = u.UserId AND ToLower(m.email) LIKE @email  ORDER BY u.UserName";
+            //return ctx.ObjectContext.CreateQuery<DbDataRecord>(queryString, new ObjectParameter[] { new ObjectParameter("appName", applicationName.ToLowerInvariant()), new ObjectParameter("email", email.ToLowerInvariant()) });
+            return null;
         }
 
         internal static IQueryable<DbDataRecord> GetAllMembershipUsersLikeUserName(MembershipContext ctx, string applicationName, string userName)
         {
-            string queryString = "select u.UserName, u.UserId, m.Email, m.PasswordQuestion, m.Comment, m.IsApproved, m.IsLockedOut, m.CreateDate, m.LastLoginDate, u.LastActivityDate, m.LastPasswordChangedDate, m.LastLockoutDate FROM Users as u, Memberships as m, Applications as a WHERE ToLower(a.ApplicationName) = @appName AND a.ApplicationId = m.ApplicationId AND m.UserId = u.UserId AND ToLower(u.UserName) LIKE @userName ORDER BY u.UserName";
-            return ctx.ObjectContext.CreateQuery<DbDataRecord>(queryString, new ObjectParameter[] { new ObjectParameter("appName", applicationName.ToLowerInvariant()), new ObjectParameter("userName", userName.ToLowerInvariant()) });
+            //string queryString = "select u.UserName, u.UserId, m.Email, m.PasswordQuestion, m.Comment, m.IsApproved, m.IsLockedOut, m.CreateDate, m.LastLoginDate, u.LastActivityDate, m.LastPasswordChangedDate, m.LastLockoutDate FROM Users as u, Memberships as m, Applications as a WHERE ToLower(a.ApplicationName) = @appName AND a.ApplicationId = m.ApplicationId AND m.UserId = u.UserId AND ToLower(u.UserName) LIKE @userName ORDER BY u.UserName";
+            //return ctx.ObjectContext.CreateQuery<DbDataRecord>(queryString, new ObjectParameter[] { new ObjectParameter("appName", applicationName.ToLowerInvariant()), new ObjectParameter("userName", userName.ToLowerInvariant()) });
+            return null;
         }
 
         internal static Application GetApplication(MembershipContext ctx, string applicationName, bool createIfNotExist = false)
@@ -80,107 +84,114 @@
 
         internal static IQueryable<ProfileEntity> GetInactiveProfiles(MembershipContext ctx, string applicationName, ProfileAuthenticationOption authenticationOption, DateTime inactiveSinceDate)
         {
-            inactiveSinceDate = inactiveSinceDate.ToUniversalTime();
-            IQueryable<ProfileEntity> queryable = from p in ctx.Profiles
-                join u in ctx.Users on p.UserId equals u.UserId into u
-                join a in ctx.Applications on u.ApplicationId equals a.ApplicationId into a
-                where (a.ApplicationName.ToLower() == applicationName.ToLower()) && (u.LastActivityDate < inactiveSinceDate)
-                select p;
-            switch (authenticationOption)
-            {
-                case ProfileAuthenticationOption.Anonymous:
-                    return (from p in queryable
-                        where p.User.IsAnonymous
-                        select p);
+            //inactiveSinceDate = inactiveSinceDate.ToUniversalTime();
+            //IQueryable<ProfileEntity> queryable = from p in ctx.Profiles
+            //    join u in ctx.Users on p.UserId equals u.UserId into u
+            //    join a in ctx.Applications on u.ApplicationId equals a.ApplicationId into a
+            //    where (a.ApplicationName.ToLower() == applicationName.ToLower()) && (u.LastActivityDate < inactiveSinceDate)
+            //    select p;
+            //switch (authenticationOption)
+            //{
+            //    case ProfileAuthenticationOption.Anonymous:
+            //        return (from p in queryable
+            //            where p.User.IsAnonymous
+            //            select p);
 
-                case ProfileAuthenticationOption.Authenticated:
-                    return (from p in queryable
-                        where !p.User.IsAnonymous
-                        select p);
+            //    case ProfileAuthenticationOption.Authenticated:
+            //        return (from p in queryable
+            //            where !p.User.IsAnonymous
+            //            select p);
 
-                case ProfileAuthenticationOption.All:
-                    return queryable;
-            }
-            return queryable;
+            //    case ProfileAuthenticationOption.All:
+            //        return queryable;
+            //}
+            //return queryable;
+            return null;
         }
 
         internal static MembershipEntity GetMembership(MembershipContext ctx, string applicationName, Guid userId)
         {
-            return (from m in ctx.Memberships
-                join u in ctx.Users on m.UserId equals u.UserId into u
-                join a in ctx.Applications on u.ApplicationId equals a.ApplicationId into a
-                where (a.ApplicationName.ToLower() == applicationName.ToLower()) && (u.UserId == userId)
-                select m).FirstOrDefault<MembershipEntity>();
+            //return (from m in ctx.Memberships
+            //    join u in ctx.Users on m.UserId equals u.UserId into u
+            //    join a in ctx.Applications on u.ApplicationId equals a.ApplicationId into a
+            //    where (a.ApplicationName.ToLower() == applicationName.ToLower()) && (u.UserId == userId)
+            //    select m).FirstOrDefault<MembershipEntity>();
+            return null;
         }
 
         internal static MembershipEntity GetMembership(MembershipContext ctx, string applicationName, string userName)
         {
-            return (from m in ctx.Memberships
-                join u in ctx.Users on m.UserId equals u.UserId into u
-                join a in ctx.Applications on u.ApplicationId equals a.ApplicationId into a
-                where (a.ApplicationName.ToLower() == applicationName.ToLower()) && (u.UserName.ToLower() == userName.ToLower())
-                select m).FirstOrDefault<MembershipEntity>();
+            //return (from m in ctx.Memberships
+            //    join u in ctx.Users on m.UserId equals u.UserId into u
+            //    join a in ctx.Applications on u.ApplicationId equals a.ApplicationId into a
+            //    where (a.ApplicationName.ToLower() == applicationName.ToLower()) && (u.UserName.ToLower() == userName.ToLower())
+            //    select m).FirstOrDefault<MembershipEntity>();
+            return null;
         }
 
         internal static MembershipAndUser GetMembershipAndUser(MembershipContext ctx, string applicationName, Guid userId)
         {
-            return (from m in ctx.Memberships
-                join u in ctx.Users on m.UserId equals u.UserId into u
-                join a in ctx.Applications on u.ApplicationId equals a.ApplicationId into a
-                where (a.ApplicationName.ToLower() == applicationName.ToLower()) && (u.UserId == userId)
-                select new MembershipAndUser { User = u, Membership = m }).FirstOrDefault<MembershipAndUser>();
+            //return (from m in ctx.Memberships
+            //    join u in ctx.Users on m.UserId equals u.UserId into u
+            //    join a in ctx.Applications on u.ApplicationId equals a.ApplicationId into a
+            //    where (a.ApplicationName.ToLower() == applicationName.ToLower()) && (u.UserId == userId)
+            //    select new MembershipAndUser { User = u, Membership = m }).FirstOrDefault<MembershipAndUser>();
+            return null;
         }
 
         internal static MembershipAndUser GetMembershipAndUser(MembershipContext ctx, string applicationName, string userName)
         {
-            return (from m in ctx.Memberships
-                join u in ctx.Users on m.UserId equals u.UserId into u
-                join a in ctx.Applications on u.ApplicationId equals a.ApplicationId into a
-                where (a.ApplicationName.ToLower() == applicationName.ToLower()) && (u.UserName.ToLower() == userName.ToLower())
-                select new MembershipAndUser { User = u, Membership = m }).FirstOrDefault<MembershipAndUser>();
+            //return (from m in ctx.Memberships
+            //    join u in ctx.Users on m.UserId equals u.UserId into u
+            //    join a in ctx.Applications on u.ApplicationId equals a.ApplicationId into a
+            //    where (a.ApplicationName.ToLower() == applicationName.ToLower()) && (u.UserName.ToLower() == userName.ToLower())
+            //    select new MembershipAndUser { User = u, Membership = m }).FirstOrDefault<MembershipAndUser>();
+            return null;
         }
 
         internal static MembershipUser GetMembershipUser(MembershipContext ctx, Guid userId, string applicationName, bool userIsOnline, string providerName)
         {
-            IQueryable<EFMembershipUser> source = from u in ctx.Users
-                join a in ctx.Applications on u.ApplicationId equals a.ApplicationId into a
-                join m in ctx.Memberships on u.UserId equals m.UserId into m
-                where ((u.UserId == userId) && (a.ApplicationName.ToLower() == applicationName.ToLower())) && (u.ApplicationId == a.ApplicationId)
-                select new EFMembershipUser { UserName = u.UserName, UserId = u.UserId, Email = m.Email, PasswordQuestion = m.PasswordQuestion, Comment = m.Comment, IsApproved = m.IsApproved, IsLockedOut = m.IsLockedOut, CreateDate = m.CreateDate, LastLoginDate = m.LastLoginDate, LastActivityDate = u.LastActivityDate, LastPasswordChangedDate = m.LastPasswordChangedDate, LastLockoutDate = m.LastLockoutDate };
-            if (userIsOnline)
-            {
-                GetUser(ctx, userId, applicationName).LastActivityDate = DateTime.UtcNow;
-                ctx.SaveChanges();
-            }
-            EFMembershipUser user2 = source.FirstOrDefault<EFMembershipUser>();
-            if (user2 != null)
-            {
-                return user2.Convert(providerName);
-            }
+            //IQueryable<EFMembershipUser> source = from u in ctx.Users
+            //    join a in ctx.Applications on u.ApplicationId equals a.ApplicationId into a
+            //    join m in ctx.Memberships on u.UserId equals m.UserId into m
+            //    where ((u.UserId == userId) && (a.ApplicationName.ToLower() == applicationName.ToLower())) && (u.ApplicationId == a.ApplicationId)
+            //    select new EFMembershipUser { UserName = u.UserName, UserId = u.UserId, Email = m.Email, PasswordQuestion = m.PasswordQuestion, Comment = m.Comment, IsApproved = m.IsApproved, IsLockedOut = m.IsLockedOut, CreateDate = m.CreateDate, LastLoginDate = m.LastLoginDate, LastActivityDate = u.LastActivityDate, LastPasswordChangedDate = m.LastPasswordChangedDate, LastLockoutDate = m.LastLockoutDate };
+            //if (userIsOnline)
+            //{
+            //    GetUser(ctx, userId, applicationName).LastActivityDate = DateTime.UtcNow;
+            //    ctx.SaveChanges();
+            //}
+            //EFMembershipUser user2 = source.FirstOrDefault<EFMembershipUser>();
+            //if (user2 != null)
+            //{
+            //    return user2.Convert(providerName);
+            //}
+            //return null;
             return null;
         }
 
         internal static MembershipUser GetMembershipUser(MembershipContext ctx, string username, string applicationName, bool userIsOnline, string providerName)
         {
-            EFMembershipUser user = (from u in ctx.Users
-                join a in ctx.Applications on u.ApplicationId equals a.ApplicationId into a
-                join m in ctx.Memberships on u.UserId equals m.UserId into m
-                where (username.ToLower() == u.UserName.ToLower()) && (a.ApplicationName.ToLower() == applicationName.ToLower())
-                select new EFMembershipUser { UserName = u.UserName, UserId = u.UserId, Email = m.Email, PasswordQuestion = m.PasswordQuestion, Comment = m.Comment, IsApproved = m.IsApproved, IsLockedOut = m.IsLockedOut, CreateDate = m.CreateDate, LastLoginDate = m.LastLoginDate, LastActivityDate = u.LastActivityDate, LastPasswordChangedDate = m.LastPasswordChangedDate, LastLockoutDate = m.LastLockoutDate }).FirstOrDefault<EFMembershipUser>();
-            if (user == null)
-            {
-                return null;
-            }
-            if (userIsOnline)
-            {
-                User user2 = GetUser(ctx, username, applicationName);
-                if (user2 != null)
-                {
-                    user2.LastActivityDate = DateTime.UtcNow;
-                    ctx.SaveChanges();
-                }
-            }
-            return user.Convert(providerName);
+            //EFMembershipUser user = (from u in ctx.Users
+            //    join a in ctx.Applications on u.ApplicationId equals a.ApplicationId into a
+            //    join m in ctx.Memberships on u.UserId equals m.UserId into m
+            //    where (username.ToLower() == u.UserName.ToLower()) && (a.ApplicationName.ToLower() == applicationName.ToLower())
+            //    select new EFMembershipUser { UserName = u.UserName, UserId = u.UserId, Email = m.Email, PasswordQuestion = m.PasswordQuestion, Comment = m.Comment, IsApproved = m.IsApproved, IsLockedOut = m.IsLockedOut, CreateDate = m.CreateDate, LastLoginDate = m.LastLoginDate, LastActivityDate = u.LastActivityDate, LastPasswordChangedDate = m.LastPasswordChangedDate, LastLockoutDate = m.LastLockoutDate }).FirstOrDefault<EFMembershipUser>();
+            //if (user == null)
+            //{
+            //    return null;
+            //}
+            //if (userIsOnline)
+            //{
+            //    User user2 = GetUser(ctx, username, applicationName);
+            //    if (user2 != null)
+            //    {
+            //        user2.LastActivityDate = DateTime.UtcNow;
+            //        ctx.SaveChanges();
+            //    }
+            //}
+            //return user.Convert(providerName);
+            return null;
         }
 
         internal static int GetNumberOfOnlineUsers(MembershipContext ctx, string applicationName, DateTime dateactive)
@@ -214,20 +225,22 @@
 
         internal static ProfileEntity GetProfile(MembershipContext ctx, string applicationName, string username)
         {
-            return (from p in ctx.Profiles
-                join u in ctx.Users on p.UserId equals u.UserId into u
-                join a in ctx.Applications on u.ApplicationId equals a.ApplicationId into a
-                where (a.ApplicationName.ToLower() == applicationName.ToLower()) && (u.UserName.ToLower() == username.ToLower())
-                select p).FirstOrDefault<ProfileEntity>();
+            //return (from p in ctx.Profiles
+            //    join u in ctx.Users on p.UserId equals u.UserId into u
+            //    join a in ctx.Applications on u.ApplicationId equals a.ApplicationId into a
+            //    where (a.ApplicationName.ToLower() == applicationName.ToLower()) && (u.UserName.ToLower() == username.ToLower())
+            //    select p).FirstOrDefault<ProfileEntity>();
+            return null;
         }
 
         internal static ProfileAndUser GetProfileAndUser(MembershipContext ctx, string applicationName, string username)
         {
-            return (from p in ctx.Profiles
-                join u in ctx.Users on p.UserId equals u.UserId into u
-                join a in ctx.Applications on u.ApplicationId equals a.ApplicationId into a
-                where (a.ApplicationName.ToLower() == applicationName.ToLower()) && (u.UserName.ToLower() == username.ToLower())
-                select new ProfileAndUser { Profile = p, User = u }).FirstOrDefault<ProfileAndUser>();
+            //return (from p in ctx.Profiles
+            //    join u in ctx.Users on p.UserId equals u.UserId into u
+            //    join a in ctx.Applications on u.ApplicationId equals a.ApplicationId into a
+            //    where (a.ApplicationName.ToLower() == applicationName.ToLower()) && (u.UserName.ToLower() == username.ToLower())
+            //    select new ProfileAndUser { Profile = p, User = u }).FirstOrDefault<ProfileAndUser>();
+            return null;
         }
 
         internal static IQueryable<EFProfileInfo> GetProfileInfos(MembershipContext ctx, string applicationName, ProfileAuthenticationOption authenticationOption, 
@@ -279,10 +292,11 @@
 
         internal static RoleEntity GetRole(MembershipContext ctx, string roleName, string applicationName)
         {
-            return (from r in ctx.Roles
-                join a in ctx.Applications on r.ApplicationId equals a.ApplicationId into a
-                where (a.ApplicationName.ToLower() == applicationName.ToLower()) && (r.RoleName.ToLower() == roleName.ToLower())
-                select r).FirstOrDefault<RoleEntity>();
+            //return (from r in ctx.Roles
+            //    join a in ctx.Applications on r.ApplicationId equals a.ApplicationId into a
+            //    where (a.ApplicationName.ToLower() == applicationName.ToLower()) && (r.RoleName.ToLower() == roleName.ToLower())
+            //    select r).FirstOrDefault<RoleEntity>();
+            return null;
         }
 
         internal static string[] GetRolesNamesForUser(MembershipContext ctx, string applicationName, string username)
@@ -299,18 +313,20 @@
 
         internal static User GetUser(MembershipContext ctx, Guid userId, string applicationName)
         {
-            return (from u in ctx.Users
-                join a in ctx.Applications on u.ApplicationId equals a.ApplicationId into a
-                where (a.ApplicationName.ToLower() == applicationName.ToLower()) && (u.UserId == userId)
-                select u).FirstOrDefault<User>();
+            //return (from u in ctx.Users
+            //    join a in ctx.Applications on u.ApplicationId equals a.ApplicationId into a
+            //    where (a.ApplicationName.ToLower() == applicationName.ToLower()) && (u.UserId == userId)
+            //    select u).FirstOrDefault<User>();
+            return null;
         }
 
         internal static User GetUser(MembershipContext ctx, string userName, string applicationName)
         {
-            return (from u in ctx.Users
-                join a in ctx.Applications on u.ApplicationId equals a.ApplicationId into a
-                where (a.ApplicationName.ToLower() == applicationName.ToLower()) && (u.UserName.ToLower() == userName.ToLower())
-                select u).FirstOrDefault<User>();
+            //return (from u in ctx.Users
+            //    join a in ctx.Applications on u.ApplicationId equals a.ApplicationId into a
+            //    where (a.ApplicationName.ToLower() == applicationName.ToLower()) && (u.UserName.ToLower() == userName.ToLower())
+            //    select u).FirstOrDefault<User>();
+            return null;
         }
 
         internal static User GetUser(MembershipContext ctx, string userName, Application application)
@@ -322,10 +338,11 @@
 
         internal static Guid GetUserIdFromUserName(MembershipContext ctx, string userName, string applicationName)
         {
-            return (from u in ctx.Users
-                join a in ctx.Applications on u.ApplicationId equals a.ApplicationId into a
-                where (a.ApplicationName.ToLower() == applicationName.ToLower()) && (u.UserName.ToLower() == userName.ToLower())
-                select u.UserId).FirstOrDefault<Guid>();
+            //return (from u in ctx.Users
+            //    join a in ctx.Applications on u.ApplicationId equals a.ApplicationId into a
+            //    where (a.ApplicationName.ToLower() == applicationName.ToLower()) && (u.UserName.ToLower() == userName.ToLower())
+            //    select u.UserId).FirstOrDefault<Guid>();
+            return Guid.NewGuid();
         }
 
         internal static UsersInRole GetUserInRole(MembershipContext ctx, Guid userId, Guid roleId)
@@ -337,11 +354,12 @@
 
         internal static string GetUserNameFromEmail(MembershipContext ctx, string email, string applicationName)
         {
-            return (from m in ctx.Memberships
-                join u in ctx.Users on m.UserId equals u.UserId into u
-                join a in ctx.Applications on m.ApplicationId equals a.ApplicationId into a
-                where (a.ApplicationName.ToLower() == applicationName.ToLower()) && (m.Email.ToLower() == email.ToLower())
-                select u.UserName).FirstOrDefault<string>();
+            //return (from m in ctx.Memberships
+            //    join u in ctx.Users on m.UserId equals u.UserId into u
+            //    join a in ctx.Applications on m.ApplicationId equals a.ApplicationId into a
+            //    where (a.ApplicationName.ToLower() == applicationName.ToLower()) && (m.Email.ToLower() == email.ToLower())
+            //    select u.UserName).FirstOrDefault<string>();
+            return null;
         }
 
         internal static IQueryable<UsersInRole> GetUserRolesForUser(MembershipContext ctx, string applicationName, string username)

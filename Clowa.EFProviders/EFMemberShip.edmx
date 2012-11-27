@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="Clowa.EFProviders.Models.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2006/04/edm/ssdl">
+    <Schema Namespace="Clowa.EFProviders.Models.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2006/04/edm/ssdl">
         <EntityContainer Name="ClowaEFProvidersModelsStoreContainer">
           <EntitySet Name="Application" EntityType="Clowa.EFProviders.Models.Store.Application" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="Profile" EntityType="Clowa.EFProviders.Models.Store.Profile" store:Type="Tables" Schema="dbo" />
@@ -162,8 +162,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="Clowa.EFProviders.Models" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2006/04/edm">

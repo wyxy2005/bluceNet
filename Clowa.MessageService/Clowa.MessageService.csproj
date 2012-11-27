@@ -88,6 +88,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="Message\dotnetfx40\dotNetFx40LP_Full_x86_x64zh-Hans.exe" />
+    <Content Include="Message\dotnetfx40\dotNetFx40_Full_x86_x64.exe" />
+    <Content Include="Message\index.html" />
+    <Content Include="Message\setup.exe" />
+    <Content Include="Message\windowsinstaller3_1\WindowsInstaller-KB893803-v2-x86.exe" />
     <Content Include="Scripts\jquery-1.6.4-vsdoc.js" />
     <Content Include="Scripts\jquery-1.6.4.js" />
     <Content Include="Scripts\jquery-1.6.4.min.js" />
@@ -114,6 +119,22 @@
     <Content Include="Views\Shared\LogOnUserControl.ascx" />
     <Content Include="Views\Shared\Site.Master" />
     <Content Include="Views\Web.config" />
+    <None Include="Message\Application Files\Clowa.Client_1_0_0_1\Clowa.Client.application" />
+    <None Include="Message\Application Files\Clowa.Client_1_0_0_1\Clowa.Client.exe.config.deploy" />
+    <None Include="Message\Application Files\Clowa.Client_1_0_0_1\Clowa.Client.exe.deploy" />
+    <None Include="Message\Application Files\Clowa.Client_1_0_0_1\Clowa.Client.exe.manifest" />
+    <None Include="Message\Application Files\Clowa.Client_1_0_0_1\Clowa.Models.dll.deploy" />
+    <None Include="Message\Application Files\Clowa.Client_1_0_0_1\lib\Microsoft.Practices.Unity.dll.deploy" />
+    <None Include="Message\Application Files\Clowa.Client_1_0_0_1\MahApps.Metro.dll.deploy" />
+    <None Include="Message\Application Files\Clowa.Client_1_0_0_1\Microsoft.Expression.Interactions.dll.deploy" />
+    <None Include="Message\Application Files\Clowa.Client_1_0_0_1\Microsoft.Practices.Prism.dll.deploy" />
+    <None Include="Message\Application Files\Clowa.Client_1_0_0_1\Microsoft.Practices.Prism.Interactivity.dll.deploy" />
+    <None Include="Message\Application Files\Clowa.Client_1_0_0_1\Microsoft.Practices.ServiceLocation.dll.deploy" />
+    <None Include="Message\Application Files\Clowa.Client_1_0_0_1\Microsoft.Practices.Unity.dll.deploy" />
+    <None Include="Message\Application Files\Clowa.Client_1_0_0_1\Newtonsoft.Json.dll.deploy" />
+    <None Include="Message\Application Files\Clowa.Client_1_0_0_1\SignalR.Client.dll.deploy" />
+    <None Include="Message\Application Files\Clowa.Client_1_0_0_1\System.Windows.Interactivity.dll.deploy" />
+    <None Include="Message\Clowa.Client.application" />
     <None Include="_bin_deployableAssemblies\Microsoft.Web.Infrastructure.dll" />
     <None Include="_bin_deployableAssemblies\System.Web.WebPages.Razor.dll" />
     <None Include="_bin_deployableAssemblies\System.Web.WebPages.dll" />

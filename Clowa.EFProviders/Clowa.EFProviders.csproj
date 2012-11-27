@@ -32,13 +32,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <SignAssembly>true</SignAssembly>
+    <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>efproviders.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Entity" />
@@ -62,6 +64,7 @@
     <Compile Include="ProviderSecurity\EFMembershipProvider.cs" />
     <Compile Include="ProviderSecurity\EFRoleProvider.cs" />
     <Compile Include="ProviderUtils.cs" />
+    <Compile Include="Resources\ProviderResources.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.Config" />
@@ -69,7 +72,6 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>EFMemberShip.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="efproviders.pfx" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
